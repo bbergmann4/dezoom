@@ -8,11 +8,11 @@
 
 #Run docker image for python3.13
 
->root@49fe2217fb78:/# python -V
+>root@49fe22:/# python -V
 
 #Python 3.13.11
 
->root@49fe2217fb78:/# pip -V
+>root@49fe22:/# pip -V
 
 #pip 25.3 from /usr/local/lib/python3.13/site-packages/pip (python 3.13)
 
