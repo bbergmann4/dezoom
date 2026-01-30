@@ -1,4 +1,4 @@
-##Question 1
+## Question 1
 
 On the _Metrics_ tab:
 
@@ -7,7 +7,7 @@ On the _Metrics_ tab:
 |upload_to_gcs |file.size |134,481,400|
 
 
-##Question 2
+## Question 2
 
 FROM 04_postgres_taxi
 
@@ -18,19 +18,19 @@ _renders to_
 
 green_tipdata_2020-04.csv
   
-##Question 3
+## Question 3
 
 Within bigquery:
 
 SELECT
-  count(unique_row_id) as rows
+  count(unique_row_id) as numrows
 FROM `triple-water-431925-m9.zoomcamp26.yellow_tripdata`
 
-|rows|
+|numrows|
 |---|
 |24648219|
 
-##Question 4
+## Question 4
 
 Within bigquery:
 
@@ -44,14 +44,14 @@ FROM
 |---|
 |1734051|
 
-##Questoin 5
+## Question 5
 
 In Bigquery:
 
 SELECT
   count(unique_row_id) as numrows
 FROM
-  triple-water-431915-m9.zoomcamp26.yellow_tripdata_2021_03
+  triple-water-431925-m9.zoomcamp26.yellow_tripdata_2021_03
 
 |numrows|
 |---|
