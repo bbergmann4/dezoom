@@ -3,6 +3,7 @@
 
 
 import pandas as pd
+import fsspec
 import pyarrow.parquet as pq
 from tqdm.auto import tqdm
 from sqlalchemy import create_engine
