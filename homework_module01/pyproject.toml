@@ -1,5 +1,5 @@
 [project]
-name = "dezoom"
+name = "homework_module01"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
@@ -16,9 +16,4 @@ dependencies = [
 dev = [
     "jupyter>=1.1.1",
     "pgcli>=4.4.0",
-]
-
-[tool.uv.workspace]
-members = [
-    "homework_module01",
 ]
