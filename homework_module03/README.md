@@ -1,4 +1,4 @@
-### Homework Module 3
+# Homework Module 3
 
 CREATE EXTERNAL TABLE triple-water-4319-m9.zoomcamp26.yellow2024_janjun 
 OPTIONS (
@@ -66,7 +66,7 @@ FROM  triple-water-431915-m9.zoomcamp26.yellow2024_janjun_optimized
 WHERE tpep_dropoff_datetime BETWEEN '2024-03-01' AND '2024-03-15'
 --This query will process 26.84 MB when run.
 
-## Question 7##
+## Question 7
 
 GCP Bucket
 
