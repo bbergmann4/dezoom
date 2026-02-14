@@ -62,6 +62,17 @@ LIMIT 1
 |Green	|2019	|10	|384624|
 
 ## Question 6
+ 
+ Loaded FHV data
+ - See update snippet to Kestra Task
+ - See update to sources, staging/schema.yml
+ - See new model:  stg_fhv_tripdata.sql
+
+```
+SELECT count(dispatch_base_id) FROM `triple-water--m9.dbt_bbergmann.stg_fhv_tripdata`
+
+-- 43244693
+```
 
 
 
