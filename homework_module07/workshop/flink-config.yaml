@@ -1,6 +1,6 @@
-# Custom Flink config for PyFlink workshop.
+# Custom Flink config for PyFlink workshop.        size: 1600m for jobmanager.memory.process.size (instead of 1024m)
 # Original: https://github.com/apache/flink/blob/release-2.2/flink-dist/src/main/resources/config.yaml
-# Changes from default:
+# Changes from default:  size: 1728m for taskmanager.memory.process.size (instead of 1024m)
 #   1. Added taskmanager.memory.jvm-metaspace.size: 512m (PyFlink needs more metaspace)
 #   2. Removed --add-exports=jdk.compiler/... from env.java.opts.all
 #      (jdk.compiler module is not present in the JRE, causing warnings on every command)
@@ -11,11 +11,11 @@ blob:
 taskmanager:
   memory:
     process:
-      size: 1728m
+      size: 2g
     jvm-metaspace:
       size: 512m  # added for PyFlink
   bind-host: 0.0.0.0
-  numberOfTaskSlots: 15
+  numberOfTaskSlots: 1
 jobmanager:
   execution:
     failover-strategy: region
@@ -24,7 +24,7 @@ jobmanager:
     port: 6123
   memory:
     process:
-      size: 1600m
+      size: 2g
   bind-host: 0.0.0.0
 query:
   server:
